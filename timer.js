@@ -11,7 +11,7 @@ const music = (args) => {
 let newArgs = args.slice(2);
 console.log(newArgs);
 }
-
+music(args);
 
 // for(let ele of args){
 //   if(isNaN){
