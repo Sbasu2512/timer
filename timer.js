@@ -7,15 +7,20 @@ const beep = mSecs => {
 };
 const args = process.argv;
 
-// const music = (args) => {
-// let newArgs = args.slice(2)
-// console.log(newArgs);
-// }
-
-
-for(let ele of args){
-  beep(ele);
+const music = (args) => {
+let newArgs = args.slice(2);
+console.log(newArgs);
 }
+
+
+// for(let ele of args){
+//   if(isNaN){
+//     return;
+//   }else if(ele <0){
+
+//   }else
+//   beep(ele);
+// }
 
 
 
