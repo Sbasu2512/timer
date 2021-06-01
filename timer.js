@@ -7,6 +7,6 @@ const beep = time => {
     },time)
 }
 
-
+beep(1500);
  
 
