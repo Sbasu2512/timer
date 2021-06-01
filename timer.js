@@ -3,7 +3,8 @@
 const beep = mSecs => {
   let seconds = mSecs*1000;
   setTimeout(()=>{
-    process.stdout.write(' \007');
+    console.log(' \007');
+    //process.stdout.write(' \007');
     },seconds)
 }
 
