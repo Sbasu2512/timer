@@ -2,7 +2,7 @@
 // console.log("\007");
 const beep = time => {
   time = time*1000;
-  setTimeOut(()=>{
+  setTimeout(()=>{
     process.stdout.write(' \007');
     },time)
 }
