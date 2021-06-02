@@ -5,21 +5,40 @@ const beep = mSecs => {
  let delay = Number(mSecs);
  setTimeout(sound,delay*1000);
 };
-const args = process.argv;
+const args = process.argv ;
 
-const music = (args) => {
+const alarm = (args) => {
 let newArgs = args.slice(2);
-console.log(newArgs);
+length = newArgs.length;
+for (let ele of newArgs) {
+  if (isNaN(ele)) {
+    console.log("beep not a number");
+  } else if (ele < 0) {
+    console.log("beep enter in seconds positive please");
+  } else if (length === 0) {
+    console.log("beep no seconds entered");
+    return;
+  } else {
+    beep(ele);
+    console.log("beep Wake Up");
+  }
 }
-music(args);
+}
+alarm(args);
 
-// for(let ele of args){
-//   if(isNaN){
+// length = args.length;
+// for (let ele of args) {
+//   if (isNaN(ele)) {
+//     console.log("beep no no");
+//   } else if (ele < 0) {
+//     console.log("beep no no");
+//   } else if (length === 0) {
+//     console.log("beep no no");
 //     return;
-//   }else if(ele <0){
-
-//   }else
-//   beep(ele);
+//   } else {
+//     beep(ele);
+//     console.log("beep");
+//   }
 // }
 
 
